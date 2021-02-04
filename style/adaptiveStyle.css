@@ -1,0 +1,382 @@
+
+@media only screen and (max-width: 1910px) {
+   
+}
+@media only screen and (max-width: 1860px) {
+   
+   
+}
+
+@media only screen and (max-width: 1440px) {
+    
+    
+   
+}
+
+@media only screen and (min-width: 1200px) {
+    
+    .drawing {
+        display: block;
+    }
+
+    .container {
+        flex-direction: row ;
+    }
+    .expertItemBlock {
+        flex-direction: row;
+    }
+    .infoBlock {
+        flex-direction: row;
+    }
+    .grid-container {
+        max-height: 500px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap:10px 10px;
+        grid-template-areas:
+          ". ."
+          ". .";
+      }
+      .foodBlock {
+        flex-direction: row;
+    
+    }
+    .menu {
+        display: flex;
+    }
+    .menuToggle {
+        display: none;
+    }
+    .miniContainer {
+        width: 60%;
+    }
+    .textCourseItem {
+        opacity: 0.5;
+    }
+    .boxItem {
+        opacity: 0.5;
+    }
+
+
+}
+
+@media  (min-width: 1025px) and (max-width: 1199px) {
+    .miniContainer {
+        width: 60%;
+    }
+    .infoBlock {
+        flex-direction: row;
+    }
+     .container {
+        flex-direction: row ;
+    }
+    section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .drawing {
+        display: none;
+    }
+    .contentBlock {
+        text-align: center;
+    }
+    .courseBlocks {
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .expertItemBlock {
+        flex-direction: row;
+    }
+    .grid-container {
+        max-height: 500px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 10px 10px;
+        grid-template-areas:
+          ". ."
+          ". .";
+      }
+      .foodBlock {
+        flex-direction: row;
+    
+    }
+
+    .menu {
+        display: flex;
+    }
+    .menuToggle {
+        display: none;
+    }
+    .textCourseItem {
+        opacity: 0.5;
+    }
+    .boxItem {
+        opacity: 0.5;
+    }
+
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .miniContainer {
+        width: 60%;
+    }
+    .infoBlock {
+        flex-direction: row;
+    }
+    .container {
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+     
+    }
+    .labelFB {
+        flex-direction: column;
+    }
+    .courseBlocks {
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .textBlock {
+        text-align: center;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .expertItemBlock {
+        flex-direction: row;
+    }
+
+    .grid-container {
+        max-height: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 0px 10px;
+        grid-template-areas:
+          ". ."
+          ". .";
+      }
+      #headerSect {
+        display: none;
+    }
+  
+    .foodBlock {
+        flex-direction: row;
+        align-items: center;
+    }
+    .menuToggle {
+        display: block;
+    }
+    .menu {
+        display: none;
+    }
+    .textCourseItem {
+        opacity: 0.5;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+    section {
+        align-items: center;
+    }
+    #headerSect {
+        display: none;
+    }
+    .container {
+        flex-direction: column ;
+        text-align: center;
+        align-items: center;
+        margin: auto;
+    }
+    .infoBlock {
+        flex-direction: column;
+    }
+    .courseBlocks {
+    flex-direction: column;
+    }
+    .textBlock {
+        text-align: center;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    
+    .expertItemBlock {
+        flex-direction: column;
+    }
+    .grid-container {
+        max-height: auto;
+        display: grid;
+        grid-template-columns: 0.6fr;
+        grid-template-rows: 1.5fr 1.5fr 1.5fr 1.5fr;
+        gap: 20px 10px;
+        grid-template-areas:
+            "."
+            "."
+            "."
+            ".";
+
+      }
+      #headerSect {
+        display: none;
+    }
+
+    .foodBlock {
+        flex-direction: column;
+        align-items: center;
+      
+    }
+
+    .menuToggle {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+    }
+    .courseItem {
+        width: 100%;
+        height: 100%;
+    }
+    .miniContainer {
+        width: 100%;
+    }
+    .textCourseItem {
+        opacity: 1;
+    }
+    .textCourseItem > .number {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    section {
+        align-items: center;
+    }
+    .courseItem {
+        width: 100%;
+        height: 100%;
+    }
+
+    #headerSect {
+        display: none;
+    }
+    .container {
+   
+        width: 300px;
+        flex-direction: column ;
+        text-align: center;
+        margin: auto;
+        align-items: flex-start;
+    }
+    .infoBlock {
+        flex-direction: column;
+    }
+    .courseBlocks {
+    flex-direction: column;
+    }
+    .textBlock {
+        text-align: center;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    
+    .expertItemBlock {
+        flex-direction: column;
+    }
+    .grid-container {
+        max-height: auto;
+
+        grid-template-rows: 1.5fr 1.5fr 1.5fr 1.5fr;
+        gap: 20px 10px;
+        grid-template-areas:
+            "."
+            "."
+            "."
+            ".";
+
+      }
+      #headerSect {
+        display: none;
+    }
+    .foodBlock {
+        flex-direction: column;
+        align-items: center;
+     
+    }
+    .foodItem {
+        margin-bottom: 50px;
+    }
+
+    .menuToggle {
+        display: block;
+    }
+    .menu {
+        display: none;
+    }
+    .labelFB {
+        flex-wrap: wrap;
+    }
+    .P {
+        font-size: 1.5em;
+    }
+    .H2 {
+        font-size: 1.8em;
+    }
+    .textCourseItem {
+        opacity: 1;
+    }
+    .textCourseItem > .number {
+        display: none;
+    }
+    .textCourse > p {
+        font-size: 13px;
+    }
+    .girl0 {
+        display: none;
+    }
+} 
+
+
+@media only screen and (max-width: 348px) {
+    section {
+        align-items: center;
+    }
+    .foodBlock {
+        flex-direction: column;
+        align-items: center;
+     
+    }
+    .foodItem {
+
+        margin-bottom: 50px;
+    }
+
+    .menuToggle {
+        display: block;
+    }
+    .menu {
+        display: none;
+    }
+    .P {
+        font-size: 1.5em;
+    }
+    .H2 {
+        font-size: 1.8em;
+    }
+    .textCourseItem {
+        opacity: 1;
+    }
+    .textCourseItem > .number {
+        display: none;
+    }
+    .textCourse > p {
+        font-size: 13px;
+    }
+    .girl0 {
+        display: none;
+    }
+} 
+
+
+

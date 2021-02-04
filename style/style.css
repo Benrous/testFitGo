@@ -1,0 +1,1018 @@
+/* Setings*/
+
+*   {
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    text-decoration: none;
+    font-family: Montserrat;
+    box-sizing: border-box;
+}
+
+*::before,
+    *::after {
+      box-sizing: border-box;
+    }
+html, body {
+    overflow-x:hidden 
+  } 
+.wrap {
+    display: flex;
+    align-items: center;
+    margin:auto;
+}
+
+body {
+    min-height: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    z-index: 0;
+    
+}
+
+main {
+  
+    position: relative;
+    display: flex; 
+    max-width: 1200px;
+    margin-top: 99px;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    flex-grow: 3
+}
+img {
+    background-size: cover;
+    max-width: 100%;
+    background-repeat: no-repeat;
+}
+
+.button {
+    display: flex;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+   top: -43px
+}
+.buttonGradient {
+    color: #fff;
+    background: linear-gradient(90deg, #F27A54 -21.05%, #A154F2 121.05%);
+    font-size: 13.25px;
+    width: 251.75px;
+    height: 56px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.buttonGradient:hover {
+    transform: scale(1.1);
+    background: linear-gradient(20deg, #F27A54 -21.05%, #A154F2 121.05%);
+
+
+-webkit-transition: transform 0.5s 0s ease-in-out;
+-moz-transition: transform 0.5s 0s ease-in-out;
+-o-transition: transform 0.5s 0s ease-in-out;
+transition: transform 0.5s 0s ease-in-out;
+}
+
+h3 {
+    color: #ffffff;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13.25px;
+    line-height: 16px;
+  
+    text-transform: uppercase;
+}
+h2 {
+    color: #5A5A5A;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+}
+p {
+    color: #6D6D6D;
+}
+a {
+    color: #000000;
+    text-decoration: none;
+    transition: all .6s ease;
+    text-transform: uppercase;
+    display: block;
+}
+
+
+button, 
+button:active, 
+button:focus {
+    outline: none;
+}
+
+/* </Setings>*/
+
+/* <HEADER>*/
+header > nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.wrapper {
+    display: flex; 
+    position: fixed;
+    width: 100%;
+    background: #ffffff;
+    z-index: 100;
+   margin-bottom: 60px;
+}
+header {
+    display: flex; 
+    height: 90px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.05);
+}
+
+nav  {
+    display: flex; 
+    max-width: 1200px;
+    width: 100%;
+    align-items: center;
+}
+nav > span {
+    width: 213px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+}
+li {
+    display: flex;
+    flex-direction: row;
+    margin-right: 26px;
+    padding: 2px;
+    opacity: 50%;
+}
+li:hover {
+    opacity: 100%;
+}
+.menu > ul > li > h2 > a {
+    position: relative;
+}
+.menu > ul > li > h2 > a::after   {
+    position: absolute;
+    top: 15px;
+    left: 0;
+	content: '';
+	height: 40px;
+	height: 3px;
+    background: linear-gradient(90deg, #F27A54 0%, #A154F2 186.42%);
+    transition: all 0.5s linear;
+    width: 0;
+    bottom: 0;  
+}
+.menu > ul > li > h2 > a:hover:after {
+    width: 100%;
+    
+} 
+.menu {
+    align-items: center;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.loginBlock {
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.menuOpen {
+    position: absolute;
+    width: 100%;
+    align-items:flex-start;
+    display: flex;
+    top: 80px;
+    background: #fff;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.05);
+    flex-direction: column;
+}
+
+.ulOpen {
+    width: 100%;
+    flex-direction: column;
+}
+
+.ulOpen > li {
+    box-shadow: 0 1px grey;
+}
+.menuToggle {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+/* </HEADER>*/
+/*Split разделитьная полоса*/
+
+.split {
+    display: flex; 
+    margin-left: calc(-50vw + 50%);
+    width: 100vw;
+    position: relative;
+   
+    height: 86px;
+    background: #F5F6FA;
+    align-items: center;
+    justify-content: flex-start;
+   
+}
+
+
+
+.split > h2 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+}
+.split > a {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    text-transform: uppercase;    
+    position: absolute;
+    top: -28px;
+    background-color: #ffffff;
+    padding-right: 77px;
+    padding-left: 77px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    border-radius: 43px;
+}
+.split > a > img {
+   
+    margin-top: 10px;
+    width: 16px;
+    height: 16px;
+}
+/*<Section>*/
+.type738px {
+    min-height: 738px;
+}
+
+section {
+    display: flex;
+    width: 100%;
+    min-height: 810px;
+    margin-bottom: 80px;
+}
+/*</Section>*/
+/*FirstBlock <headerSection>*/
+
+
+
+.background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    max-width: 251.75px;
+    width: 100%;
+    height: 56px;
+    background: linear-gradient(90deg, #F27A54 -21.05%, #A154F2 121.05%);
+    border-radius: 30px;
+    outline: 0;
+    border: none;
+    color: #FFFFFF;
+}
+.background:hover {
+    background: linear-gradient(20deg, #F27A54 -21.05%, #A154F2 121.05%);
+    box-shadow: 0px 0px 3px 0px #F27A54 ;
+}
+.gradient {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 139.9%;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #F27A54 -21.05%, #A154F2 121.05%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+.label {
+    display: flex;
+    width: 100%;
+    height: 85%;
+    justify-content: space-evenly;
+
+}
+.label0 {
+    line-height: 139.9%;
+}
+.label > h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 139.9%;
+    text-transform: uppercase;
+    background: linear-gradient(135deg, #12BCB0 20%, #FABE0E 70%);
+}
+.label >  .label0> h2 {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 139.9%;
+}
+
+.labelFB {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    margin-left: 10px;
+}
+
+.labelFB > h2 {
+    font-weight: 500;
+    font-size: 1em;
+    margin: 15px;
+
+}
+.labelFB > h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+}
+.background:active,
+.background:focus {
+    outline: 0;
+} 
+.drawing {
+    width: 30%;
+    height: 100%;
+    position: relative;
+    flex-grow: 3;
+}
+.elips {
+    position: absolute;
+    top: 152px;
+    left: 40px;
+    z-index: 0;
+}
+.glav {
+    z-index: 1;
+    position: absolute;
+    top: 30px;
+}
+/*FirstBlock </headerSection>*/
+/*SecondBlock <courseSection>*/
+.containerItem {
+    display: flex;
+    flex-direction: row;
+}
+
+.textBlock {
+     display: flex;
+
+}
+.courseSection {
+    display: flex; 
+    margin-bottom: 80px;
+}
+.courseSection > .textBlock > h2 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 139.9%;
+    margin-top: 100px;
+    margin-bottom: 25px;
+}
+.courseSection > .textBlock  > p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.BackgroundBlack {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.5;
+    z-index: 2;
+}
+
+.grid-container {
+    display: grid;
+    justify-items: stretch;
+    justify-content: space-evenly;
+    max-width: 1190px;
+
+  }
+
+  
+
+.courseBlocks {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+  
+}
+.courseItem {
+    display: flex; 
+
+    margin: 19px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;  
+    text-align: none; 
+}
+.courseItem > img {
+    z-index: 1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.courseItem > h3 {
+    z-index: 2;
+    margin-top: 25.55px;
+    margin-left: 40px;
+    font-size: 26px;
+    line-height: 139.9%;
+}
+.courseItem > p {
+    z-index: 2;
+    color: #ffffff  ;
+    margin-top: 25.55px;
+    margin-left: 40px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 139.9%;
+}
+
+.H2 {
+    width: 100%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2em;
+    margin-top: 100px;
+    margin-bottom: 25px;
+    line-height: 1;
+}
+.P {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 139.9%;
+}
+/*SecondBlock </courseSection>*/
+
+/*ThirtyBlock <InfoSection>*/
+.infoItems {
+    margin-top: 170px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.infoItem {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    width: 300px;
+    height: 240px;
+
+}
+.infoItem > img {
+    width: 70px;
+    height: 70px;
+}
+.infoBlock {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+}
+
+
+/*ThirtyBlock </InfoSection>*/
+
+/* <FourBlock> */
+.infoCourse > .container  {
+    align-items: center;
+    margin-bottom: 20px;
+    
+}
+
+
+.infoCourse h1 {
+    width: 100%;
+}
+
+
+.infoCourse .infoText {
+    width: 70%;
+}
+
+
+
+.textCourseItem {
+    position: relative;
+    max-width: 770px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+.textCourseItem:hover {
+    -webkit-transition: transform 0.8s 0.1s ease-in-out;
+-moz-transition: transform 0.8s 0.1s ease-in-out;
+-o-transition: transform 0.8s 0.1s ease-in-out;
+transition: transform 0.8s 0.1s ease-in-out;
+    transform: translateX(100px);
+    opacity: 1;
+}
+.textCourseItem > .number {
+    top: -16px;
+    left: 50px;
+    text-align: left;
+    position: absolute;
+    width: 100%;
+    font-size: 100px;
+    font-weight: bolder;
+    background: #6D6D6D;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+.number:hover {
+    background: linear-gradient(90deg, #F27A54 -21.05%, #A154F2 121.05%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+
+.textCourse {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+}
+
+.textCourse > h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 150%;
+}
+
+.textCourse > p {
+    font-style: normal;
+    font-weight: normal;
+
+    line-height: 120%;
+}
+
+
+.elips3 {
+    position: absolute;
+    top: 60px;
+    left: 65px;
+}
+.elips6 {
+    position: absolute;
+    top: 350px;
+    left: 50px;
+}
+
+
+/* </FourBlock>  */
+
+/* <FiveBlock> */
+
+.miniContainer {
+    display: flex;
+
+}
+.contentBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.foodSection {
+    justify-content: space-between;
+}
+
+.contentFood  {
+    width: 60%;
+}
+
+
+.foodBlock {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.foodItem {
+    margin-right: 20px;
+    position: relative;
+    width: 160px;
+    height: 160px;
+  
+    margin-bottom: 50px;
+}
+
+.coverImg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(83, 83, 83);
+    opacity: 0.5;
+    border-radius: 50%;
+    z-index: 2;
+    filter: drop-shadow(0px 6.50178px 10px rgba(0, 0, 0, 0.3));
+}
+.coverImg:hover {
+    background: black;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+    z-index: 2;
+}
+
+.foodItem:hover {
+  transition: transform 0.5s ease-in-out;
+  transform: scale(1.2);
+}
+/* </FiveBlock> */
+
+
+
+/* <SixBlock>  */
+
+
+.courseBox > .container {
+   display: flex;
+   align-items: center;
+   margin-top: 100px;
+   width: 100%;
+   min-height: 600px;
+   justify-content: space-between;
+   justify-content: center;
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+.boxItem {
+    height: 500px;
+    margin: 20px;
+    position: relative;
+    cursor: pointer;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    max-height: 600px;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    justify-content: center;
+}
+
+.boxItem:hover {
+    opacity: 1;
+    transition: transform 0.6s ease-in-out;
+    transform: scale(1.2);
+}
+
+.title-price {
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.price {
+    margin-top: 40px;
+    font-size: 30px;
+    font-weight: bolder;
+}
+.boxItem > h1 {
+    margin-top: 50px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 139.9%;
+}
+.boxItem > h3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    max-width: 326px;
+    margin-top: 30px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 139.9%;
+    color: #000000;
+}
+
+.boxItem > h3 > img {
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+}
+
+.boxItem > a {
+    cursor: pointer;
+     display: flex;
+     padding-right: 15px;
+     padding-left: 15px;
+     padding-top: 15px;  
+     padding-bottom: 15px;
+     text-align: center;
+     top: -43px;
+     margin-top: 30px;
+     
+}
+.drawings {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+   opacity: 0;
+   
+}
+
+.drawings:hover {
+   opacity: 0.9;
+
+}
+.boxItem > .drawings > img {
+    width: auto;
+}
+
+.boxItem > .drawings > .dumb {
+    position: absolute;
+    top: 14px;
+    right: 10px;
+    z-index: 5;
+}
+.elipss {
+    position: absolute;
+    right: 0;
+} 
+.elipsss {
+    position: absolute;
+    right: 0;
+}
+.tab {
+    width: 100%;
+    height: 100%;
+}
+/* </SixBlock> */
+/* <SevenBlock> */
+.expertSection > .container {
+  justify-content: space-between;
+}
+.expertItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.expertItemBlock {
+    justify-content: space-between;
+    display: flex;
+    flex-grow: 3;
+}
+.expertItem > .imgExpert {
+    background: #ffffff;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}    
+.expertItem > .imgExpert > img {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+}
+.expertItem > .name {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+.expertItem > .name > h2 {
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 28px;
+}
+.expertItem > .name > p {
+ 
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+}
+.expertSection > .contanerFeed > .feedBack {
+    width: 80%;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.expertSection  > .contanerFeed > .feedBack >h2 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 139.9%;
+   
+}
+.expertSection > .contanerFeed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 100px;
+    flex-wrap:wrap;
+}
+/* </SevenBlock> */
+
+/* <Footer> */
+.footer {
+    min-height: 300px;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer {
+    justify-content: space-between;
+    height: 300px;
+    align-items: center;
+    margin-top: 50px;
+}
+
+
+.navFooter > ul > a > li {
+   padding: 5px;
+   margin: 0;
+}
+
+.navFooter > ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+
+    width: 500px;
+    height: 90px;
+}
+
+.ButInformation {
+    display: flex;
+    align-items: center;
+
+}
+
+.footerItem {
+    opacity: 1;
+}
+
+.footerItem > h5 {
+    margin-left: 12px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #979797;
+
+} 
+
+.footerItems {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+/* </Footer> */
+/*FeedBack*/
+.cover {
+
+    position: fixed; /* фиксированное положение */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #ffffff;
+    z-index: 1050;
+  
+    -webkit-transition: opacity 200ms ease-in; 
+    -moz-transition: opacity 200ms ease-in;
+    transition: opacity 200ms ease-in; /* анимация перехода */
+    
+    margin: auto;
+    padding: 0;
+
+
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    height: 100%;
+    max-height: 570px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    display: none;
+}
+.cover > h2 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5em;
+    line-height: 139.9%;
+    margin-bottom: 50px;
+}
+
+#contactform {
+    display: flex;
+    align-items: center;
+    max-width: 350px;
+    width: 100%;
+}
+
+p {
+    color: #000000;
+}
+input {
+    width: 100%;
+    max-width: 350px;
+    height: 56px;
+    border: 1px solid #ACACAC;
+    box-sizing: border-box;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+#submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    cursor: pointer;
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13.25px;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+
+    width: 251.75px;
+    height: 56px;
+    background: linear-gradient(90deg, #F27A54 -21.05%, #A154F2 121.05%);
+    border-radius: 30px;
+}
+
+.exit {
+        
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: start;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+   
+
+}
+
+.exit > a {
+    cursor: pointer;
+    padding: 10px;
+}
+/*Feedback*/
+
+.vk > img {
+    width: 32px;
+    height: 32px;
+}
